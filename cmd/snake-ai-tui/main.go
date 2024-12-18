@@ -4,9 +4,10 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"snake/internal/game"
-	"snake/internal/terminal"
 	"time"
+
+	"github.com/ctrl-vfr/snake-ai-tui/internal/game"
+	"github.com/ctrl-vfr/snake-ai-tui/internal/terminal"
 )
 
 const (

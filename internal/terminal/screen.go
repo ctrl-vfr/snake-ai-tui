@@ -3,9 +3,10 @@ package terminal
 import (
 	"fmt"
 	"math/rand"
-	"snake/internal/game"
 	"sync"
 	"time"
+
+	"github.com/ctrl-vfr/snake-ai-tui/internal/game"
 )
 
 type Screen struct {

@@ -36,7 +36,7 @@ go build ./cmd/snake-ai-tui
 Alternatively, you can use the `go install` command to install the project directly from GitHub.
 
 ```bash
-go install github.com/ctrl-vfr/snake-ai-tui/cmd/snake-ai-tui
+go install github.com/ctrl-vfr/snake-ai-tui/cmd/snake-ai-tui@latest
 ```
 
 ## 🎮 Usage

@@ -1,4 +1,4 @@
-module snake
+module github.com/ctrl-vfr/snake-ai-tui
 
 go 1.21.0
 
