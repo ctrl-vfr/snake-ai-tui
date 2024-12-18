@@ -48,12 +48,15 @@ jobs:
     - name: Download artifacts
       uses: actions/download-artifact@v3
       with:
-        path: dist/
+        name: binaries-${{ matrix.goos }}-${{ matrix.goarch }}
+
+    - name: List files in dist
+      run: ls -l dist/
 
     - name: Create Release
       uses: ncipollo/release-action@v1
       with:
-        artifacts: dist/*
+        artifacts: ${{ github.workspace }}/dist/*
         tag: ${{ github.ref_name }}
         releaseName: Release ${{ github.ref_name }}
         draft: false
